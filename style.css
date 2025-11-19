@@ -1,0 +1,169 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.tagline {
+    font-size: 0.85em;
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+nav a {
+    margin-left: 20px;
+    font-size: 0.9em;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4CAF50;
+}
+
+.nav-button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 0;
+    background: white;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.hero h1 {
+    font-size: 3em;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.sub-headline {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+}
+
+.cta-button.secondary {
+    background-color: #007bff;
+}
+
+.cta-button.secondary:hover {
+    background-color: #0056b3;
+}
+
+
+.benefit-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.benefit {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-top: 5px solid #4CAF50;
+}
+
+.benefit .icon {
+    font-size: 2.5em;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.benefit h3 {
+    color: #1a1a1a;
+    margin-top: 0;
+}
+
+.cta-banner {
+    background-color: #e9ecef;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #333;
+    color: #bbb;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+    .benefit-grid {
+        flex-direction: column;
+    }
+    
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tagline {
+        margin: 10px 0;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+}
